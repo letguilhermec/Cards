@@ -40,7 +40,7 @@ struct ResizableView: ViewModifier {
       }
       .onEnded { scale in
         transform.size.width *= scale
-        transform.size.height += scale
+        transform.size.height *= scale
         self.scale = 1.0
       }
   }

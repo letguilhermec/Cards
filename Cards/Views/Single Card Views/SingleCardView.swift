@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SingleCardView: View {
-  @Environment(\.dismiss) var dismiss
   @State private var currentModal: ToolbarSelection?
   
   var content: some View {
@@ -32,22 +31,7 @@ struct SingleCardView: View {
   var body: some View {
     NavigationStack {
       content
-        .toolbar {
-          ToolbarItem(placement: .navigationBarTrailing) {
-            Button("Done") {
-              dismiss()
-            }
-          }
-          ToolbarItem(placement: .bottomBar) {
-            BottomToolbar(modal: $currentModal)
-          }
-        }
-        .sheet(item: $currentModal) { item in
-          switch item {
-          default:
-            Text(String(describing: item))
-          }
-        }
+        .modifier(CardToolbar(currentModal: $currentModal))
     }
   }
 }

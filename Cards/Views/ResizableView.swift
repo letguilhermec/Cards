@@ -47,7 +47,9 @@ struct ResizableView: ViewModifier {
   
   func body(content: Content) -> some View {
     content
-      .frame(width: transform.size.width, height: transform.size.height)
+      .frame(
+        width: transform.size.width,
+        height: transform.size.height)
       .rotationEffect(transform.rotation)
       .scaleEffect(scale)
       .offset(transform.offset)

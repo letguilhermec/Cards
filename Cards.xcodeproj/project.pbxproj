@@ -19,6 +19,9 @@
 		B24439F32A00650400822683 /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439F22A00650400822683 /* ResizableView.swift */; };
 		B24439F52A0065BC00822683 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439F42A0065BC00822683 /* Transform.swift */; };
 		B24439F72A00688100822683 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439F62A00688100822683 /* Operators.swift */; };
+		B24439FA2A0073BE00822683 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439F92A0073BE00822683 /* Settings.swift */; };
+		B24439FD2A00751900822683 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439FC2A00751900822683 /* ColorExtensions.swift */; };
+		B24439FF2A00777800822683 /* CardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439FE2A00777800822683 /* CardToolbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		B24439F22A00650400822683 /* ResizableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableView.swift; sourceTree = "<group>"; };
 		B24439F42A0065BC00822683 /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
 		B24439F62A00688100822683 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		B24439F92A0073BE00822683 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B24439FC2A00751900822683 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		B24439FE2A00777800822683 /* CardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardToolbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +74,10 @@
 			isa = PBXGroup;
 			children = (
 				B219D8382A00475E0098DDB1 /* CardsApp.swift */,
-				B24439EF2A00627000822683 /* Views */,
+				B24439F82A0073B000822683 /* Config */,
+				B24439FB2A0074DA00822683 /* Extensions */,
 				B24439F02A00627500822683 /* Model */,
+				B24439EF2A00627000822683 /* Views */,
 				B219D83C2A00475F0098DDB1 /* Assets.xcassets */,
 				B219D83E2A00475F0098DDB1 /* Preview Content */,
 			);
@@ -111,8 +119,25 @@
 			children = (
 				B24439E72A004BDB00822683 /* SingleCardView.swift */,
 				B24439ED2A005ABA00822683 /* BottomToolbar.swift */,
+				B24439FE2A00777800822683 /* CardToolbar.swift */,
 			);
 			path = "Single Card Views";
+			sourceTree = "<group>";
+		};
+		B24439F82A0073B000822683 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B24439F92A0073BE00822683 /* Settings.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B24439FB2A0074DA00822683 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B24439FC2A00751900822683 /* ColorExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +212,7 @@
 			files = (
 				B24439E52A004B2100822683 /* CardThumbnail.swift in Sources */,
 				B24439F72A00688100822683 /* Operators.swift in Sources */,
+				B24439FF2A00777800822683 /* CardToolbar.swift in Sources */,
 				B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */,
 				B24439F32A00650400822683 /* ResizableView.swift in Sources */,
 				B24439E32A00495100822683 /* CardsListView.swift in Sources */,
@@ -194,7 +220,9 @@
 				B24439EC2A005A4C00822683 /* ToolbarSelection.swift in Sources */,
 				B24439EE2A005ABA00822683 /* BottomToolbar.swift in Sources */,
 				B24439F52A0065BC00822683 /* Transform.swift in Sources */,
+				B24439FA2A0073BE00822683 /* Settings.swift in Sources */,
 				B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */,
+				B24439FD2A00751900822683 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,10 +37,12 @@ struct BottomToolbar: View {
   
   var body: some View {
     HStack {
-      Button {
-        modal = .stickerModal
-      } label: {
-        ToolbarButton()
+      ForEach(ToolbarSelection.allCases, id: \.self) { selection in
+        Button {
+          modal = selection
+        } label: {
+          ToolbarButton(modal: selection)
+        }
       }
     }
   }

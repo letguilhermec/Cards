@@ -10,10 +10,11 @@ import SwiftUI
 struct ResizableView: View {
   private let content = RoundedRectangle(cornerRadius: 30.0)
   private let color = Color.red
+  @State private var transform = Transform()
   
   var body: some View {
     content
-      .frame(width: 250, height: 180)
+      .frame(width: transform.size.width, height: transform.size.height)
       .foregroundColor(color)
   }
 }

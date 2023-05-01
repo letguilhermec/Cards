@@ -41,7 +41,6 @@
 		B219D82C2A00475E0098DDB1 = {
 			isa = PBXGroup;
 			children = (
-				B24439E72A004BDB00822683 /* SingleCardView.swift */,
 				B219D8372A00475E0098DDB1 /* Cards */,
 				B219D8362A00475E0098DDB1 /* Products */,
 			);
@@ -59,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				B219D8382A00475E0098DDB1 /* CardsApp.swift */,
+				B24439E72A004BDB00822683 /* SingleCardView.swift */,
 				B219D83A2A00475E0098DDB1 /* ContentView.swift */,
 				B24439E42A004B2100822683 /* CardThumbnail.swift */,
 				B24439E22A00495100822683 /* CardsListView.swift */,

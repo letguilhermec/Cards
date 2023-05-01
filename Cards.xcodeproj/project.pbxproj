@@ -18,6 +18,7 @@
 		B24439EE2A005ABA00822683 /* BottomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439ED2A005ABA00822683 /* BottomToolbar.swift */; };
 		B24439F32A00650400822683 /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439F22A00650400822683 /* ResizableView.swift */; };
 		B24439F52A0065BC00822683 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439F42A0065BC00822683 /* Transform.swift */; };
+		B24439F72A00688100822683 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439F62A00688100822683 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B24439ED2A005ABA00822683 /* BottomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomToolbar.swift; sourceTree = "<group>"; };
 		B24439F22A00650400822683 /* ResizableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableView.swift; sourceTree = "<group>"; };
 		B24439F42A0065BC00822683 /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		B24439F62A00688100822683 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				B24439EB2A005A4C00822683 /* ToolbarSelection.swift */,
 				B24439F42A0065BC00822683 /* Transform.swift */,
+				B24439F62A00688100822683 /* Operators.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B24439E52A004B2100822683 /* CardThumbnail.swift in Sources */,
+				B24439F72A00688100822683 /* Operators.swift in Sources */,
 				B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */,
 				B24439F32A00650400822683 /* ResizableView.swift in Sources */,
 				B24439E32A00495100822683 /* CardsListView.swift in Sources */,

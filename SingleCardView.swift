@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct SingleCardView: View {
+  @Environment(\.dismiss) var dismiss
+  
   var body: some View {
-    Color.yellow
+    NavigationStack {
+      Color.yellow
+        .toolbar {
+          ToolbarItem(placement: .navigationBarTrailing) {
+            Button("Done") {
+              dismiss()
+            }
+          }
+      }
+    }
   }
 }
 

@@ -37,7 +37,7 @@ struct BottomToolbar: View {
   
   var body: some View {
     HStack {
-      ForEach(ToolbarSelection.allCases, id: \.self) { selection in
+      ForEach(ToolbarSelection.allCases) { selection in
         Button {
           modal = selection
         } label: {

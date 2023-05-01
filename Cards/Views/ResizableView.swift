@@ -38,8 +38,8 @@ struct ResizableView: View {
     content
       .frame(width: transform.size.width, height: transform.size.height)
       .foregroundColor(color)
-      .offset(transform.offset)
       .rotationEffect(transform.rotation)
+      .offset(transform.offset)
       .gesture(dragGesture)
       .gesture(rotationGesture)
   }

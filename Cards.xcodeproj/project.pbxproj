@@ -12,6 +12,7 @@
 		B219D83D2A00475F0098DDB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B219D83C2A00475F0098DDB1 /* Assets.xcassets */; };
 		B219D8402A00475F0098DDB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B219D83F2A00475F0098DDB1 /* Preview Assets.xcassets */; };
 		B24439E32A00495100822683 /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439E22A00495100822683 /* CardsListView.swift */; };
+		B24439E52A004B2100822683 /* CardThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439E42A004B2100822683 /* CardThumbnail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B219D83C2A00475F0098DDB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B219D83F2A00475F0098DDB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B24439E22A00495100822683 /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
+		B24439E42A004B2100822683 /* CardThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardThumbnail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				B219D8382A00475E0098DDB1 /* CardsApp.swift */,
 				B219D83A2A00475E0098DDB1 /* ContentView.swift */,
+				B24439E42A004B2100822683 /* CardThumbnail.swift */,
 				B24439E22A00495100822683 /* CardsListView.swift */,
 				B219D83C2A00475F0098DDB1 /* Assets.xcassets */,
 				B219D83E2A00475F0098DDB1 /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24439E52A004B2100822683 /* CardThumbnail.swift in Sources */,
 				B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */,
 				B24439E32A00495100822683 /* CardsListView.swift in Sources */,
 				B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */,

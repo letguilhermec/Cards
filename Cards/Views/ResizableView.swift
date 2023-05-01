@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ResizableView: View {
+  @State private var transform = Transform()
   private let content = RoundedRectangle(cornerRadius: 30.0)
   private let color = Color.red
-  @State private var transform = Transform()
+  var dragGesture: some Gesture {
+    DragGesture()
+      .onChanged { value in
+        transform.offset = value.translation
+      }
+  }
   
   var body: some View {
     content

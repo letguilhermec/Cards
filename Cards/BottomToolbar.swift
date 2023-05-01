@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct ToolbarButton: View {
+  let modal: ToolbarSelection
+  
+  private let modalButton: [
+    ToolbarSelection: (text: String, imageName: String)
+  ] = [
+    .photoModal: ("Photos", "photo"),
+    .frameModal: ("Frames", "square.on.circle"),
+    .stickerModal: ("Stickers", "heart.circle"),
+    .textModal: ("Text", "textformat")
+  ]
+  
   var body: some View {
-    VStack {
-      Image(systemName: "heart.circle")
-        .font(.largeTitle)
-      Text("Stickers")
+    if let text = modalButton[modal]?.text,
+       let imageName = modalButton[modal]?.imageName {
+      VStack {
+        Image(systemName: imageName)
+          .font(.largeTitle)
+        Text(text)
+      }
+      .padding(.top)
     }
-    .padding(.top)
   }
 }
 

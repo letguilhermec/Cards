@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum ToolbarSelection {
+enum ToolbarSelection: CaseIterable {
   case photoModal, frameModal, stickerModal, textModal
 }

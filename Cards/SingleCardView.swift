@@ -24,6 +24,12 @@ struct SingleCardView: View {
             BottomToolbar(modal: $currentModal)
           }
         }
+        .sheet(item: $currentModal) { item in
+          switch item {
+          default:
+            Text(String(describing: item))
+          }
+        }
     }
   }
 }

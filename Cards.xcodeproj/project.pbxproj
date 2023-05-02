@@ -27,6 +27,8 @@
 		B2443A052A008E3800822683 /* CardElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A042A008E3800822683 /* CardElement.swift */; };
 		B2443A072A008E6600822683 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A062A008E6600822683 /* Card.swift */; };
 		B2443A092A008FA200822683 /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A082A008FA200822683 /* CardStore.swift */; };
+		B2443A0B2A009A5900822683 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A0A2A009A5900822683 /* CardDetailView.swift */; };
+		B2443A0D2A009B1800822683 /* CardElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A0C2A009B1800822683 /* CardElementView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		B2443A042A008E3800822683 /* CardElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardElement.swift; sourceTree = "<group>"; };
 		B2443A062A008E6600822683 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B2443A082A008FA200822683 /* CardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStore.swift; sourceTree = "<group>"; };
+		B2443A0A2A009A5900822683 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		B2443A0C2A009B1800822683 /* CardElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardElementView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 				B24439E72A004BDB00822683 /* SingleCardView.swift */,
 				B24439ED2A005ABA00822683 /* BottomToolbar.swift */,
 				B24439FE2A00777800822683 /* CardToolbar.swift */,
+				B2443A0A2A009A5900822683 /* CardDetailView.swift */,
+				B2443A0C2A009B1800822683 /* CardElementView.swift */,
 			);
 			path = "Single Card Views";
 			sourceTree = "<group>";
@@ -225,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2443A0B2A009A5900822683 /* CardDetailView.swift in Sources */,
 				B2443A052A008E3800822683 /* CardElement.swift in Sources */,
 				B24439E52A004B2100822683 /* CardThumbnail.swift in Sources */,
 				B24439F72A00688100822683 /* Operators.swift in Sources */,
@@ -239,6 +246,7 @@
 				B24439EC2A005A4C00822683 /* ToolbarSelection.swift in Sources */,
 				B24439EE2A005ABA00822683 /* BottomToolbar.swift in Sources */,
 				B24439F52A0065BC00822683 /* Transform.swift in Sources */,
+				B2443A0D2A009B1800822683 /* CardElementView.swift in Sources */,
 				B24439FA2A0073BE00822683 /* Settings.swift in Sources */,
 				B2443A092A008FA200822683 /* CardStore.swift in Sources */,
 				B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */,

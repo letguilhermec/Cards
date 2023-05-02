@@ -11,6 +11,7 @@
 		B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B219D83A2A00475E0098DDB1 /* ContentView.swift */; };
 		B219D83D2A00475F0098DDB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B219D83C2A00475F0098DDB1 /* Assets.xcassets */; };
 		B219D8402A00475F0098DDB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B219D83F2A00475F0098DDB1 /* Preview Assets.xcassets */; };
+		B2254D272A01439A0034C710 /* Stickers in Resources */ = {isa = PBXBuildFile; fileRef = B2254D262A01439A0034C710 /* Stickers */; };
 		B24439E32A00495100822683 /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439E22A00495100822683 /* CardsListView.swift */; };
 		B24439E52A004B2100822683 /* CardThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439E42A004B2100822683 /* CardThumbnail.swift */; };
 		B24439E82A004BDB00822683 /* SingleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439E72A004BDB00822683 /* SingleCardView.swift */; };
@@ -38,6 +39,7 @@
 		B219D83C2A00475F0098DDB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B219D83F2A00475F0098DDB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2254D1D2A013E7C0034C710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B2254D262A01439A0034C710 /* Stickers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Stickers; path = "../../Kodeco/suia-materials/16-adding-assets-to-your-app/assets/Stickers"; sourceTree = "<group>"; };
 		B24439E22A00495100822683 /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
 		B24439E42A004B2100822683 /* CardThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardThumbnail.swift; sourceTree = "<group>"; };
 		B24439E72A004BDB00822683 /* SingleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		B219D8372A00475E0098DDB1 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				B2254D262A01439A0034C710 /* Stickers */,
 				B2254D1D2A013E7C0034C710 /* Info.plist */,
 				B219D8382A00475E0098DDB1 /* CardsApp.swift */,
 				B24439F82A0073B000822683 /* Config */,
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B219D8402A00475F0098DDB1 /* Preview Assets.xcassets in Resources */,
+				B2254D272A01439A0034C710 /* Stickers in Resources */,
 				B219D83D2A00475F0098DDB1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

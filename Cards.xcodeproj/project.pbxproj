@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B20E700D2A0148F9001526B3 /* StickerModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E700C2A0148F9001526B3 /* StickerModal.swift */; };
 		B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B219D8382A00475E0098DDB1 /* CardsApp.swift */; };
 		B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B219D83A2A00475E0098DDB1 /* ContentView.swift */; };
 		B219D83D2A00475F0098DDB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B219D83C2A00475F0098DDB1 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B20E700C2A0148F9001526B3 /* StickerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerModal.swift; sourceTree = "<group>"; };
 		B219D8352A00475E0098DDB1 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B219D8382A00475E0098DDB1 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
 		B219D83A2A00475E0098DDB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B20E700B2A0148D0001526B3 /* Card Modal Views */ = {
+			isa = PBXGroup;
+			children = (
+				B20E700C2A0148F9001526B3 /* StickerModal.swift */,
+			);
+			path = "Card Modal Views";
+			sourceTree = "<group>";
+		};
 		B219D82C2A00475E0098DDB1 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		B24439F12A00629000822683 /* Single Card Views */ = {
 			isa = PBXGroup;
 			children = (
+				B20E700B2A0148D0001526B3 /* Card Modal Views */,
 				B24439E72A004BDB00822683 /* SingleCardView.swift */,
 				B24439ED2A005ABA00822683 /* BottomToolbar.swift */,
 				B24439FE2A00777800822683 /* CardToolbar.swift */,
@@ -239,6 +250,7 @@
 			files = (
 				B2443A0B2A009A5900822683 /* CardDetailView.swift in Sources */,
 				B2443A052A008E3800822683 /* CardElement.swift in Sources */,
+				B20E700D2A0148F9001526B3 /* StickerModal.swift in Sources */,
 				B24439E52A004B2100822683 /* CardThumbnail.swift in Sources */,
 				B24439F72A00688100822683 /* Operators.swift in Sources */,
 				B24439FF2A00777800822683 /* CardToolbar.swift in Sources */,

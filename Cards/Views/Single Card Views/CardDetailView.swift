@@ -20,6 +20,9 @@ struct CardDetailView: View {
           .frame(
             width: element.transform.size.width,
             height: element.transform.size.height)
+          .elementContextMenu(
+            card: $card,
+            element: $element)
       }
     }
     .dropDestination(for: CustomTransfer.self) { items, location in

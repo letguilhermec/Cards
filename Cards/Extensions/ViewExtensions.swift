@@ -12,7 +12,7 @@ extension View {
     card: Binding<Card>,
     element: Binding<CardElement>
   ) -> some View {
-    modifier(elementContextMenu(
+    modifier(ElementContextMenu(
       card: card,
       element: element))
   }

@@ -9,6 +9,11 @@ import SwiftUI
 
 struct StickerModal: View {
   @State private var stickerNames: [String] = []
+  @Binding var stickerImage: UIImage?
+  @Environment(\.dismiss) var dismiss
+  let columns = [
+    GridItem(.adaptive(minimum: 120), spacing: 10)
+  ]
   
   static func loadStickers() -> [String] {
     var themes: [URL] = []
@@ -50,10 +55,16 @@ struct StickerModal: View {
   
   var body: some View {
     ScrollView {
-      ForEach(stickerNames, id: \.self) { sticker in
-        Image(uiImage: image(from: sticker))
-          .resizable()
-          .aspectRatio(contentMode: .fit)
+      LazyVGrid(columns: columns) {
+        ForEach(stickerNames, id: \.self) { sticker in
+          Image(uiImage: image(from: sticker))
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .onTapGesture {
+              stickerImage = image(from: sticker)
+              dismiss()
+            }
+        }
       }
     }
     .onAppear {
@@ -64,6 +75,6 @@ struct StickerModal: View {
 
 struct StickerModal_Previews: PreviewProvider {
   static var previews: some View {
-    StickerModal()
+    StickerModal(stickerImage: .constant(UIImage()))
   }
 }

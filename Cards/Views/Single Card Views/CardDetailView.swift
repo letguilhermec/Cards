@@ -16,13 +16,13 @@ struct CardDetailView: View {
       card.backgroundColor
       ForEach($card.elements, id: \.id) { $element in
         CardElementView(element: element)
+          .elementContextMenu(
+            card: $card,
+            element: $element)
           .resizableView(transform: $element.transform)
           .frame(
             width: element.transform.size.width,
             height: element.transform.size.height)
-          .elementContextMenu(
-            card: $card,
-            element: $element)
       }
     }
     .dropDestination(for: CustomTransfer.self) { items, location in

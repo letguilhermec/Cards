@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SingleCardView: View {
   @State private var currentModal: ToolbarSelection?
-  let card: Card
+  @Binding var card: Card
   
   var content: some View {
     card.backgroundColor
@@ -25,6 +25,6 @@ struct SingleCardView: View {
 
 struct SingleCardView_Previews: PreviewProvider {
   static var previews: some View {
-    SingleCardView(card: initialCards[0])
+    SingleCardView(card: .constant(initialCards[0]))
   }
 }

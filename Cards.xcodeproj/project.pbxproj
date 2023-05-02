@@ -10,6 +10,7 @@
 		B20E700D2A0148F9001526B3 /* StickerModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E700C2A0148F9001526B3 /* StickerModal.swift */; };
 		B20E70102A0170B5001526B3 /* PhotosModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E700F2A0170B5001526B3 /* PhotosModal.swift */; };
 		B20E70122A017C2B001526B3 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E70112A017C2B001526B3 /* UIImageExtensions.swift */; };
+		B20E70142A0186F6001526B3 /* CustomTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E70132A0186F6001526B3 /* CustomTransfer.swift */; };
 		B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B219D8382A00475E0098DDB1 /* CardsApp.swift */; };
 		B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B219D83A2A00475E0098DDB1 /* ContentView.swift */; };
 		B219D83D2A00475F0098DDB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B219D83C2A00475F0098DDB1 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		B20E700C2A0148F9001526B3 /* StickerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerModal.swift; sourceTree = "<group>"; };
 		B20E700F2A0170B5001526B3 /* PhotosModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModal.swift; sourceTree = "<group>"; };
 		B20E70112A017C2B001526B3 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		B20E70132A0186F6001526B3 /* CustomTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransfer.swift; sourceTree = "<group>"; };
 		B219D8352A00475E0098DDB1 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B219D8382A00475E0098DDB1 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
 		B219D83A2A00475E0098DDB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				B2443A042A008E3800822683 /* CardElement.swift */,
 				B2443A062A008E6600822683 /* Card.swift */,
 				B2443A082A008FA200822683 /* CardStore.swift */,
+				B20E70132A0186F6001526B3 /* CustomTransfer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */,
 				B20E70102A0170B5001526B3 /* PhotosModal.swift in Sources */,
 				B24439FD2A00751900822683 /* ColorExtensions.swift in Sources */,
+				B20E70142A0186F6001526B3 /* CustomTransfer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,12 +22,11 @@ struct CardDetailView: View {
             height: element.transform.size.height)
       }
     }
-    .dropDestination(for: UIImage.self) { images, location in
-      print(location)
-      for image in images {
-        card.addElement(uiImage: image)
+    .dropDestination(for: String.self) { strings, _ in
+      for text in strings {
+        card.addElement(text: TextElement(text: text))
       }
-      return !images.isEmpty
+      return !strings.isEmpty
     }
   }
 }

@@ -16,7 +16,19 @@ struct CardToolbar: ViewModifier {
   var menu: some View {
     Menu {
       Button {
-        // add action here
+        if UIPasteboard.general.hasImages {
+          if let images = UIPasteboard.general.images {
+            for image in images {
+              card.addElement(uiImage: image)
+            }
+          }
+        } else if UIPasteboard.general.hasStrings {
+          if let strings = UIPasteboard.general.strings {
+            for text in strings {
+              card.addElement(text: TextElement(text: text))
+            }
+          }
+        }
       } label: {
         Label("Paste", systemImage: "doc.on.clipboard")
       }

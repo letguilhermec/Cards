@@ -14,6 +14,7 @@ struct ElementContextMenu: ViewModifier {
   func body(content: Content) -> some View {
     content
       .contextMenu {
+        // Copy
         Button {
           if let element = element as? TextElement {
             UIPasteboard.general.string = element.text
@@ -23,6 +24,12 @@ struct ElementContextMenu: ViewModifier {
           }
         } label: {
           Label("Copy", systemImage: "doc.on.doc")
+        }
+        // Delete
+        Button(role: .destructive) {
+          card.remove(element)
+        } label: {
+          Label("Delete", systemImage: "trash")
         }
       }
   }

@@ -22,6 +22,8 @@
 		B24439FA2A0073BE00822683 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439F92A0073BE00822683 /* Settings.swift */; };
 		B24439FD2A00751900822683 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439FC2A00751900822683 /* ColorExtensions.swift */; };
 		B24439FF2A00777800822683 /* CardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24439FE2A00777800822683 /* CardToolbar.swift */; };
+		B2443A012A00894400822683 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A002A00894400822683 /* PreviewData.swift */; };
+		B2443A032A00896A00822683 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A022A00896A00822683 /* TextExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		B24439F92A0073BE00822683 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		B24439FC2A00751900822683 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		B24439FE2A00777800822683 /* CardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardToolbar.swift; sourceTree = "<group>"; };
+		B2443A002A00894400822683 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		B2443A022A00896A00822683 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B219D83F2A00475F0098DDB1 /* Preview Assets.xcassets */,
+				B2443A002A00894400822683 /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				B24439FC2A00751900822683 /* ColorExtensions.swift */,
+				B2443A022A00896A00822683 /* TextExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 				B24439F72A00688100822683 /* Operators.swift in Sources */,
 				B24439FF2A00777800822683 /* CardToolbar.swift in Sources */,
 				B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */,
+				B2443A032A00896A00822683 /* TextExtensions.swift in Sources */,
+				B2443A012A00894400822683 /* PreviewData.swift in Sources */,
 				B24439F32A00650400822683 /* ResizableView.swift in Sources */,
 				B24439E32A00495100822683 /* CardsListView.swift in Sources */,
 				B24439E82A004BDB00822683 /* SingleCardView.swift in Sources */,

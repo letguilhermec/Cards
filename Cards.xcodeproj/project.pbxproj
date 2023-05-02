@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B20E700D2A0148F9001526B3 /* StickerModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E700C2A0148F9001526B3 /* StickerModal.swift */; };
+		B20E70102A0170B5001526B3 /* PhotosModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E700F2A0170B5001526B3 /* PhotosModal.swift */; };
 		B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B219D8382A00475E0098DDB1 /* CardsApp.swift */; };
 		B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B219D83A2A00475E0098DDB1 /* ContentView.swift */; };
 		B219D83D2A00475F0098DDB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B219D83C2A00475F0098DDB1 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		B20E700C2A0148F9001526B3 /* StickerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerModal.swift; sourceTree = "<group>"; };
+		B20E700F2A0170B5001526B3 /* PhotosModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModal.swift; sourceTree = "<group>"; };
 		B219D8352A00475E0098DDB1 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B219D8382A00475E0098DDB1 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
 		B219D83A2A00475E0098DDB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				B20E700C2A0148F9001526B3 /* StickerModal.swift */,
+				B20E700F2A0170B5001526B3 /* PhotosModal.swift */,
 			);
 			path = "Card Modal Views";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				B24439FA2A0073BE00822683 /* Settings.swift in Sources */,
 				B2443A092A008FA200822683 /* CardStore.swift in Sources */,
 				B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */,
+				B20E70102A0170B5001526B3 /* PhotosModal.swift in Sources */,
 				B24439FD2A00751900822683 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

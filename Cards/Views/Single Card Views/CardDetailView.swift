@@ -26,8 +26,15 @@ struct CardDetailView: View {
 }
 
 struct CardDetailView_Previews: PreviewProvider {
+  struct CardDetailPreview: View {
+    @EnvironmentObject var store: CardStore
+    
+    var body: some View {
+      CardDetailView(card: $store.cards[0])
+    }
+  }
   static var previews: some View {
-    CardDetailView(card: .constant(initialCards[0]))
+    CardDetailPreview()
       .environmentObject(CardStore(defaultData: true))
   }
 }

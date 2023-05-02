@@ -30,6 +30,8 @@ struct CardToolbar: ViewModifier {
               card.addElements(from: items)
             }
           }
+          .labelStyle(.iconOnly)
+          .buttonBorderShape(.capsule)
         }
       }
       .sheet(item: $currentModal) { item in

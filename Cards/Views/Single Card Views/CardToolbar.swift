@@ -24,6 +24,13 @@ struct CardToolbar: ViewModifier {
         ToolbarItem(placement: .bottomBar) {
           BottomToolbar(modal: $currentModal, card: $card)
         }
+        ToolbarItem(placement: .navigationBarLeading) {
+          PasteButton(payloadType: CustomTransfer.self) { items in
+            Task {
+              card.addElements(from: items)
+            }
+          }
+        }
       }
       .sheet(item: $currentModal) { item in
         switch item {

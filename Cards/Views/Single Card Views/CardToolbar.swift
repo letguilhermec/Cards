@@ -13,6 +13,20 @@ struct CardToolbar: ViewModifier {
   @Binding var card: Card
   @State private var stickerImage: UIImage?
   
+  var menu: some View {
+    Menu {
+      Button {
+        // add action here
+      } label: {
+        Label("Paste", systemImage: "doc.on.clipboard")
+      }
+      .disabled(!UIPasteboard.general.hasImages
+                && !UIPasteboard.general.hasStrings)
+    } label: {
+      Label("Add", systemImage: "ellipsis.circle")
+    }
+  }
+  
   func body(content: Content) -> some View {
     content
       .toolbar {
@@ -24,14 +38,8 @@ struct CardToolbar: ViewModifier {
         ToolbarItem(placement: .bottomBar) {
           BottomToolbar(modal: $currentModal, card: $card)
         }
-        ToolbarItem(placement: .navigationBarLeading) {
-          PasteButton(payloadType: CustomTransfer.self) { items in
-            Task {
-              card.addElements(from: items)
-            }
-          }
-          .labelStyle(.iconOnly)
-          .buttonBorderShape(.capsule)
+        ToolbarItem(placement: .navigationBarTrailing) {
+            menu
         }
       }
       .sheet(item: $currentModal) { item in

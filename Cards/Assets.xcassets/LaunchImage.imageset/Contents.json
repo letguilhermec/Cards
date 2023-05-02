@@ -11,6 +11,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "launch-screen-dark.svg",
       "idiom" : "universal"
     },
     {
@@ -25,6 +26,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "launch-screen-landscape-dark.svg",
       "height-class" : "compact",
       "idiom" : "universal"
     }

@@ -22,11 +22,12 @@ struct CardDetailView: View {
             height: element.transform.size.height)
       }
     }
-    .dropDestination(for: String.self) { strings, _ in
-      for text in strings {
-        card.addElement(text: TextElement(text: text))
+    .dropDestination(for: CustomTransfer.self) { items, location in
+      print(location)
+      Task {
+        card.addElements(from: items)
       }
-      return !strings.isEmpty
+      return !items.isEmpty
     }
   }
 }

@@ -12,6 +12,7 @@
 		B20E70122A017C2B001526B3 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E70112A017C2B001526B3 /* UIImageExtensions.swift */; };
 		B20E70142A0186F6001526B3 /* CustomTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E70132A0186F6001526B3 /* CustomTransfer.swift */; };
 		B20E70162A019409001526B3 /* ElementContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E70152A019409001526B3 /* ElementContextMenu.swift */; };
+		B20E70182A01956E001526B3 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E70172A01956E001526B3 /* ViewExtensions.swift */; };
 		B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B219D8382A00475E0098DDB1 /* CardsApp.swift */; };
 		B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B219D83A2A00475E0098DDB1 /* ContentView.swift */; };
 		B219D83D2A00475F0098DDB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B219D83C2A00475F0098DDB1 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		B20E70112A017C2B001526B3 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		B20E70132A0186F6001526B3 /* CustomTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransfer.swift; sourceTree = "<group>"; };
 		B20E70152A019409001526B3 /* ElementContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementContextMenu.swift; sourceTree = "<group>"; };
+		B20E70172A01956E001526B3 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		B219D8352A00475E0098DDB1 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B219D8382A00475E0098DDB1 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
 		B219D83A2A00475E0098DDB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				B24439FC2A00751900822683 /* ColorExtensions.swift */,
 				B2443A022A00896A00822683 /* TextExtensions.swift */,
 				B20E70112A017C2B001526B3 /* UIImageExtensions.swift */,
+				B20E70172A01956E001526B3 /* ViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				B24439F52A0065BC00822683 /* Transform.swift in Sources */,
 				B2443A0D2A009B1800822683 /* CardElementView.swift in Sources */,
 				B24439FA2A0073BE00822683 /* Settings.swift in Sources */,
+				B20E70182A01956E001526B3 /* ViewExtensions.swift in Sources */,
 				B2443A092A008FA200822683 /* CardStore.swift in Sources */,
 				B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */,
 				B20E70102A0170B5001526B3 /* PhotosModal.swift in Sources */,

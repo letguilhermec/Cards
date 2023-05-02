@@ -22,7 +22,7 @@ struct CardToolbar: ViewModifier {
           }
         }
         ToolbarItem(placement: .bottomBar) {
-          BottomToolbar(modal: $currentModal)
+          BottomToolbar(modal: $currentModal, card: $card)
         }
       }
       .sheet(item: $currentModal) { item in

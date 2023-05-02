@@ -17,4 +17,8 @@ struct Card: Identifiable {
     let element = ImageElement(uiImage: uiImage)
     elements.append(element)
   }
+  
+  mutating func addElement(text: TextElement) {
+    elements.append(text)
+  }
 }

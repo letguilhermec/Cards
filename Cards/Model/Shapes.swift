@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct Shapes: View {
-  var body: some View {
-    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-  }
-}
-
 struct Triangle: Shape {
   func path(in rect: CGRect) -> Path {
     let width = rect.width
@@ -64,6 +58,10 @@ struct Lens: Shape {
 struct Shapes_Previews: PreviewProvider {
   static var previews: some View {
     Lens()
+      .stroke(
+        Color.primary,
+        style: StrokeStyle(lineWidth: 10, lineJoin: .round))
+      .padding()
       .aspectRatio(1, contentMode: .fit)
       .background(Color.yellow)
       .previewLayout(.sizeThatFits)

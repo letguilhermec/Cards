@@ -13,6 +13,7 @@ struct CardElementView: View {
   var body: some View {
     if let element = element as? ImageElement {
       ImageElementView(element: element)
+        .clip()
     }
     if let element = element as? TextElement {
       TextElementView(element: element)
@@ -50,6 +51,7 @@ private extension ImageElementView {
       let shape = Shapes.shapes[frameIndex]
       self
         .clipShape(shape)
+        .contentShape(shape)
     } else { self }
   }
 }

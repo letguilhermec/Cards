@@ -17,3 +17,25 @@ extension View {
       element: element))
   }
 }
+
+extension View {
+  @ViewBuilder
+  func overlay(
+    element: CardElement,
+    isSelected: Bool
+  ) -> some View {
+    if isSelected,
+       let element = element as? ImageElement,
+       let frameIndex = element.frameIndex {
+      let shape = Shapes.shapes[frameIndex]
+      self.overlay(shape
+        .stroke(lineWidth: Settings.borderWidth)
+        .foregroundColor(Settings.borderColor))
+    } else {
+      self
+        .border(
+          Settings.borderColor,
+          width: isSelected ? Settings.borderWidth : 0)
+    }
+  }
+}

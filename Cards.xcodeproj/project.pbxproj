@@ -37,6 +37,7 @@
 		B2443A0B2A009A5900822683 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A0A2A009A5900822683 /* CardDetailView.swift */; };
 		B2443A0D2A009B1800822683 /* CardElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A0C2A009B1800822683 /* CardElementView.swift */; };
 		B2895CB82A028D5D002669C3 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CB72A028D5D002669C3 /* Shapes.swift */; };
+		B2895CBA2A029F44002669C3 /* FrameModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CB92A029F44002669C3 /* FrameModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		B2443A0A2A009A5900822683 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		B2443A0C2A009B1800822683 /* CardElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardElementView.swift; sourceTree = "<group>"; };
 		B2895CB72A028D5D002669C3 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		B2895CB92A029F44002669C3 /* FrameModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				B20E700C2A0148F9001526B3 /* StickerModal.swift */,
 				B20E700F2A0170B5001526B3 /* PhotosModal.swift */,
+				B2895CB92A029F44002669C3 /* FrameModal.swift */,
 			);
 			path = "Card Modal Views";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				B24439EC2A005A4C00822683 /* ToolbarSelection.swift in Sources */,
 				B24439EE2A005ABA00822683 /* BottomToolbar.swift in Sources */,
 				B24439F52A0065BC00822683 /* Transform.swift in Sources */,
+				B2895CBA2A029F44002669C3 /* FrameModal.swift in Sources */,
 				B2443A0D2A009B1800822683 /* CardElementView.swift in Sources */,
 				B24439FA2A0073BE00822683 /* Settings.swift in Sources */,
 				B20E70182A01956E001526B3 /* ViewExtensions.swift in Sources */,

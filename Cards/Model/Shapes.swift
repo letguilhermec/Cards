@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+enum Shapes {
+  static let shapes: [AnyShape] = [
+    AnyShape(Circle()), AnyShape(Rectangle()), AnyShape(Cone()), AnyShape(Lens())
+  ]
+}
+
 struct Triangle: Shape {
   func path(in rect: CGRect) -> Path {
     let width = rect.width

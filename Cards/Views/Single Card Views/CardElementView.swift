@@ -43,6 +43,17 @@ struct TextElementView: View {
   }
 }
 
+private extension ImageElementView {
+  @ViewBuilder
+  func clip() -> some View {
+    if let frameIndex = element.frameIndex {
+      let shape = Shapes.shapes[frameIndex]
+      self
+        .clipShape(shape)
+    } else { self }
+  }
+}
+
 struct CardElementView_Previews: PreviewProvider {
   static var previews: some View {
     CardElementView(element: initialElements[1])

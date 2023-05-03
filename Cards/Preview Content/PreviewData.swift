@@ -5,6 +5,8 @@
 //  Created by Guilherme de Carvalho Correa on 01/05/23.
 //
 
+import SwiftUI
+
 let initialCards: [Card] = [
   Card(backgroundColor: .yellow, elements: initialElements),
   Card(backgroundColor: .teal),

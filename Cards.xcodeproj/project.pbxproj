@@ -36,6 +36,7 @@
 		B2443A092A008FA200822683 /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A082A008FA200822683 /* CardStore.swift */; };
 		B2443A0B2A009A5900822683 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A0A2A009A5900822683 /* CardDetailView.swift */; };
 		B2443A0D2A009B1800822683 /* CardElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A0C2A009B1800822683 /* CardElementView.swift */; };
+		B2895CB82A028D5D002669C3 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CB72A028D5D002669C3 /* Shapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		B2443A082A008FA200822683 /* CardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStore.swift; sourceTree = "<group>"; };
 		B2443A0A2A009A5900822683 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		B2443A0C2A009B1800822683 /* CardElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardElementView.swift; sourceTree = "<group>"; };
+		B2895CB72A028D5D002669C3 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				B2443A062A008E6600822683 /* Card.swift */,
 				B2443A082A008FA200822683 /* CardStore.swift */,
 				B20E70132A0186F6001526B3 /* CustomTransfer.swift */,
+				B2895CB72A028D5D002669C3 /* Shapes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				B2443A032A00896A00822683 /* TextExtensions.swift in Sources */,
 				B2443A072A008E6600822683 /* Card.swift in Sources */,
 				B20E70162A019409001526B3 /* ElementContextMenu.swift in Sources */,
+				B2895CB82A028D5D002669C3 /* Shapes.swift in Sources */,
 				B2443A012A00894400822683 /* PreviewData.swift in Sources */,
 				B24439F32A00650400822683 /* ResizableView.swift in Sources */,
 				B24439E32A00495100822683 /* CardsListView.swift in Sources */,

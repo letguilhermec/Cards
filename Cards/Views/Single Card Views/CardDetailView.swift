@@ -23,7 +23,9 @@ struct CardDetailView: View {
         }
       ForEach($card.elements, id: \.id) { $element in
         CardElementView(element: element)
-          .overlay(element: element, isSelected: isSelected(element))
+          .overlay(
+            element: element,
+            isSelected: isSelected(element))
           .elementContextMenu(
             card: $card,
             element: $element)

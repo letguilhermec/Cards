@@ -11,6 +11,36 @@ struct CardsListView: View {
   @State private var selectedCard: Card?
   @EnvironmentObject var store: CardStore
   @Environment(\.scenePhase) private var scenePhase
+  @Environment(\.horizontalSizeClass) var horizontalSizeClass
+  @Environment(\.verticalSizeClass) var verticalSizeClass
+  
+  var createButton: some View {
+    Button {
+      selectedCard = store.addCard()
+    } label: {
+      Label("Create New", systemImage: "plus")
+        .frame(maxWidth: .infinity)
+    }
+    .font(.system(size: 16, weight: .bold))
+    .padding([.top, .bottom], 10)
+    .background(Color("barColor"))
+  }
+  
+  var thumbnailSize: CGSize {
+    var scale: CGFloat = 1
+    if verticalSizeClass == .regular,
+       horizontalSizeClass == .regular {
+      scale = 1.5
+    }
+    return Settings.thumbnailSize * scale
+  }
+  
+  var columns: [GridItem] {
+    [
+      GridItem(.adaptive(
+        minimum: thumbnailSize.width))
+    ]
+  }
   
   var body: some View {
     VStack {
@@ -28,17 +58,18 @@ struct CardsListView: View {
           }
         }
         .onAppear {
-          print(URL.documentsDirectory)
+          //print(URL.documentsDirectory)
         }
-      Button("Add") {
-        selectedCard = store.addCard()
-      }
+    createButton
     }
+    .background(
+      Color("background")
+        .ignoresSafeArea())
   }
   
   var list: some View {
     ScrollView(showsIndicators: false) {
-      VStack {
+      LazyVGrid(columns: columns, spacing: 30) {
         ForEach(store.cards) { card in
           CardThumbnail(card: card)
             .contextMenu {
@@ -48,6 +79,9 @@ struct CardsListView: View {
                 Label("Delete", systemImage: "trash")
               }
             }
+            .frame(
+              width: thumbnailSize.width,
+              height: thumbnailSize.height)
             .onTapGesture {
               selectedCard = card
             }

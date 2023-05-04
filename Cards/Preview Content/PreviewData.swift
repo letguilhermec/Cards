@@ -8,11 +8,11 @@
 import SwiftUI
 
 let initialCards: [Card] = [
-  Card(backgroundColor: .yellow, elements: initialElements),
-  Card(backgroundColor: .teal),
-  Card(backgroundColor: .red),
-  Card(backgroundColor: .purple),
-  Card(backgroundColor: .orange)
+  Card(backgroundColor: Color("random1"), elements: initialElements),
+  Card(backgroundColor: Color("random2")),
+  Card(backgroundColor: Color("random3")),
+  Card(backgroundColor: Color("random4")),
+  Card(backgroundColor: Color("random8"))
 ]
 
 let initialElements: [CardElement] = [

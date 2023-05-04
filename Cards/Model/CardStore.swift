@@ -51,4 +51,11 @@ extension CardStore {
     }
     return cards
   }
+  
+  func addCard() -> Card {
+    let card = Card(backgroundColor: Color.random())
+    cards.append(card)
+    card.save()
+    return card
+  }
 }

@@ -17,6 +17,9 @@ struct SingleCardView: View {
       .modifier(CardToolbar(
         currentModal: $currentModal,
         card: $card))
+      .onDisappear {
+        card.save()
+      }
     }
   }
 }

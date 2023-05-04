@@ -14,8 +14,16 @@ struct AppLoadingView: View {
     if showSplash {
       SplashScreen()
         .ignoresSafeArea()
+        .onAppear {
+          DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            withAnimation {
+              showSplash = false
+            }
+          }
+        }
     } else {
       CardsListView()
+        .transition(.scale(scale: 0, anchor: .top))
     }
   }
 }

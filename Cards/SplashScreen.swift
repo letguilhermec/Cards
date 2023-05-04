@@ -56,10 +56,11 @@ private struct SplashAnimation: ViewModifier {
       .rotationEffect(
         animating ? .zero
         : Angle(degrees: Double.random(in: -10...10)))
+      .animation(animation.delay(delay), value: animating)
       .onAppear{
-        withAnimation(animation.delay(delay)) {
+        //withAnimation(animation.delay(delay)) {
           animating = false
-        }
+        //}
       }
   }
 }

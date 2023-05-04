@@ -24,6 +24,7 @@ struct CardsListView: View {
     .font(.system(size: 16, weight: .bold))
     .padding([.top, .bottom], 10)
     .background(Color("barColor"))
+    .accentColor(.white)
   }
   
   var thumbnailSize: CGSize {
@@ -42,10 +43,36 @@ struct CardsListView: View {
     ]
   }
   
+  var initialView: some View {
+    VStack {
+      Spacer()
+      let card = Card(
+        backgroundColor: Color(uiColor: .systemBackground))
+      ZStack {
+        CardThumbnail(card: card)
+        Image(systemName: "plus.circle.fill")
+          .font(.largeTitle)
+      }
+      .frame(
+        width: thumbnailSize.width * 1.2,
+        height: thumbnailSize.height * 1.2)
+      .onTapGesture {
+        selectedCard = store.addCard()
+      }
+      Spacer()
+    }
+  }
+  
   var body: some View {
     VStack {
-      list
-        .fullScreenCover(item: $selectedCard) { card in
+      Group {
+        if store.cards.isEmpty {
+          initialView
+        } else {
+          list
+        }
+      }
+      .fullScreenCover(item: $selectedCard) { card in
           if let index = store.index(for: card) {
             SingleCardView(card: $store.cards[index])
               .onChange(of: scenePhase) { newScenePhase in

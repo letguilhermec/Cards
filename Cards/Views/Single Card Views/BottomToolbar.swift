@@ -46,7 +46,7 @@ struct BottomToolbar: View {
   }
   
   var body: some View {
-    HStack {
+    HStack(alignment: .bottom) {
       ForEach(ToolbarSelection.allCases) { selection in
         switch selection {
         case .photoModal:

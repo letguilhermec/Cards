@@ -26,6 +26,9 @@ struct CardsListView: View {
           fatalError("Unable to locate selected card")
         }
       }
+      .onAppear {
+        print(URL.documentsDirectory)
+      }
   }
   
   var list: some View {

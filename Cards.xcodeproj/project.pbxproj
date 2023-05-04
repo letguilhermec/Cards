@@ -38,6 +38,7 @@
 		B2443A0D2A009B1800822683 /* CardElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2443A0C2A009B1800822683 /* CardElementView.swift */; };
 		B2895CB82A028D5D002669C3 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CB72A028D5D002669C3 /* Shapes.swift */; };
 		B2895CBA2A029F44002669C3 /* FrameModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CB92A029F44002669C3 /* FrameModal.swift */; };
+		B2895CBC2A033BB9002669C3 /* AngleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CBB2A033BB9002669C3 /* AngleExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		B2443A0C2A009B1800822683 /* CardElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardElementView.swift; sourceTree = "<group>"; };
 		B2895CB72A028D5D002669C3 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		B2895CB92A029F44002669C3 /* FrameModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameModal.swift; sourceTree = "<group>"; };
+		B2895CBB2A033BB9002669C3 /* AngleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				B2443A022A00896A00822683 /* TextExtensions.swift */,
 				B20E70112A017C2B001526B3 /* UIImageExtensions.swift */,
 				B20E70172A01956E001526B3 /* ViewExtensions.swift */,
+				B2895CBB2A033BB9002669C3 /* AngleExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				B24439FF2A00777800822683 /* CardToolbar.swift in Sources */,
 				B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */,
 				B20E70122A017C2B001526B3 /* UIImageExtensions.swift in Sources */,
+				B2895CBC2A033BB9002669C3 /* AngleExtensions.swift in Sources */,
 				B2443A032A00896A00822683 /* TextExtensions.swift in Sources */,
 				B2443A072A008E6600822683 /* Card.swift in Sources */,
 				B20E70162A019409001526B3 /* ElementContextMenu.swift in Sources */,

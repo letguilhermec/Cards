@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CardsListView: View {
   @State private var selectedCard: Card?
+  @State private var listState = ListState.list
   @EnvironmentObject var store: CardStore
   @Environment(\.scenePhase) private var scenePhase
   @Environment(\.horizontalSizeClass) var horizontalSizeClass
@@ -65,11 +66,20 @@ struct CardsListView: View {
   
   var body: some View {
     VStack {
+      ListSelection(listState: $listState)
+        .padding(.bottom, 5)
       Group {
         if store.cards.isEmpty {
           initialView
         } else {
-          list
+          Group {
+            switch listState {
+            case .list:
+              list
+            case .carousel:
+              Carousel(selectedCard: $selectedCard)
+            }
+          }
         }
       }
       .fullScreenCover(item: $selectedCard) { card in

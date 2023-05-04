@@ -14,6 +14,7 @@ struct CardToolbar: ViewModifier {
   @Binding var card: Card
   @State private var stickerImage: UIImage?
   @State private var frameIndex: Int?
+  @State private var text: TextElement = TextElement()
   
   var menu: some View {
     Menu {
@@ -45,15 +46,17 @@ struct CardToolbar: ViewModifier {
     content
       .toolbar {
         ToolbarItem(placement: .navigationBarTrailing) {
+          menu
+        }
+        ToolbarItem(placement: .navigationBarTrailing) {
           Button("Done") {
             dismiss()
           }
         }
         ToolbarItem(placement: .bottomBar) {
-          BottomToolbar(modal: $currentModal, card: $card)
-        }
-        ToolbarItem(placement: .navigationBarTrailing) {
-            menu
+          BottomToolbar(
+            modal: $currentModal,
+            card: $card)
         }
       }
       .sheet(item: $currentModal) { item in
@@ -75,6 +78,14 @@ struct CardToolbar: ViewModifier {
                 card.addElement(uiImage: stickerImage)
               }
               stickerImage = nil
+            }
+        case .textModal:
+          TextModal(text: $text)
+            .onDisappear {
+              if !text.text.isEmpty {
+                card.addElement(text: text)
+              }
+              text = TextElement()
             }
         default:
           Text(String(describing: item))

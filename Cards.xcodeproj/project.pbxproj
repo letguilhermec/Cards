@@ -41,6 +41,8 @@
 		B2895CBC2A033BB9002669C3 /* AngleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CBB2A033BB9002669C3 /* AngleExtensions.swift */; };
 		B2895CBE2A03E518002669C3 /* TextModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CBD2A03E518002669C3 /* TextModal.swift */; };
 		B2895CC02A040034002669C3 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CBF2A040034002669C3 /* LayoutView.swift */; };
+		B2895CC22A042B62002669C3 /* AppLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CC12A042B62002669C3 /* AppLoadingView.swift */; };
+		B2895CC42A042B6B002669C3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CC32A042B6B002669C3 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		B2895CBB2A033BB9002669C3 /* AngleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleExtensions.swift; sourceTree = "<group>"; };
 		B2895CBD2A03E518002669C3 /* TextModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModal.swift; sourceTree = "<group>"; };
 		B2895CBF2A040034002669C3 /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
+		B2895CC12A042B62002669C3 /* AppLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoadingView.swift; sourceTree = "<group>"; };
+		B2895CC32A042B6B002669C3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 				B24439EF2A00627000822683 /* Views */,
 				B219D83C2A00475F0098DDB1 /* Assets.xcassets */,
 				B219D83E2A00475F0098DDB1 /* Preview Content */,
+				B2895CC12A042B62002669C3 /* AppLoadingView.swift */,
+				B2895CC32A042B6B002669C3 /* SplashScreen.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -284,9 +290,11 @@
 				B24439E52A004B2100822683 /* CardThumbnail.swift in Sources */,
 				B24439F72A00688100822683 /* Operators.swift in Sources */,
 				B24439FF2A00777800822683 /* CardToolbar.swift in Sources */,
+				B2895CC42A042B6B002669C3 /* SplashScreen.swift in Sources */,
 				B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */,
 				B20E70122A017C2B001526B3 /* UIImageExtensions.swift in Sources */,
 				B2895CBC2A033BB9002669C3 /* AngleExtensions.swift in Sources */,
+				B2895CC22A042B62002669C3 /* AppLoadingView.swift in Sources */,
 				B2443A032A00896A00822683 /* TextExtensions.swift in Sources */,
 				B2895CC02A040034002669C3 /* LayoutView.swift in Sources */,
 				B2443A072A008E6600822683 /* Card.swift in Sources */,

@@ -13,22 +13,27 @@ struct CardsListView: View {
   @Environment(\.scenePhase) private var scenePhase
   
   var body: some View {
-    list
-      .fullScreenCover(item: $selectedCard) { card in
-        if let index = store.index(for: card) {
-          SingleCardView(card: $store.cards[index])
-            .onChange(of: scenePhase) { newScenePhase in
-              if newScenePhase == .inactive {
-                store.cards[index].save()
+    VStack {
+      list
+        .fullScreenCover(item: $selectedCard) { card in
+          if let index = store.index(for: card) {
+            SingleCardView(card: $store.cards[index])
+              .onChange(of: scenePhase) { newScenePhase in
+                if newScenePhase == .inactive {
+                  store.cards[index].save()
+                }
               }
-            }
-        } else {
-          fatalError("Unable to locate selected card")
+          } else {
+            fatalError("Unable to locate selected card")
+          }
         }
+        .onAppear {
+          print(URL.documentsDirectory)
+        }
+      Button("Add") {
+        selectedCard = store.addCard()
       }
-      .onAppear {
-        print(URL.documentsDirectory)
-      }
+    }
   }
   
   var list: some View {

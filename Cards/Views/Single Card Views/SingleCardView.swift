@@ -27,6 +27,11 @@ struct SingleCardView: View {
             currentModal: $currentModal,
             card: $card))
           .onDisappear {
+            let uiImage = UIImage.screenshot(
+              card: card,
+              size: Settings.cardSize * 0.2)
+            _ = uiImage.save(to: card.id.uuidString)
+            card.uiImage = uiImage
             card.save()
           }
       }

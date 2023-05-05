@@ -46,6 +46,8 @@
 		B2895CC62A043508002669C3 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CC52A043508002669C3 /* Carousel.swift */; };
 		B2895CC82A0437FD002669C3 /* ListSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CC72A0437FD002669C3 /* ListSelection.swift */; };
 		B2895CCA2A052A8E002669C3 /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CC92A052A8E002669C3 /* ShareCardView.swift */; };
+		B2895CCC2A0532E2002669C3 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CCB2A0532E2002669C3 /* TextView.swift */; };
+		B2895CCE2A054E8A002669C3 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CCD2A054E8A002669C3 /* AppFonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		B2895CC52A043508002669C3 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		B2895CC72A0437FD002669C3 /* ListSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSelection.swift; sourceTree = "<group>"; };
 		B2895CC92A052A8E002669C3 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
+		B2895CCB2A0532E2002669C3 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		B2895CCD2A054E8A002669C3 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,17 +137,17 @@
 		B219D8372A00475E0098DDB1 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				B2254D262A01439A0034C710 /* Stickers */,
 				B2254D1D2A013E7C0034C710 /* Info.plist */,
+				B2895CC12A042B62002669C3 /* AppLoadingView.swift */,
 				B219D8382A00475E0098DDB1 /* CardsApp.swift */,
+				B2895CC32A042B6B002669C3 /* SplashScreen.swift */,
 				B24439F82A0073B000822683 /* Config */,
 				B24439FB2A0074DA00822683 /* Extensions */,
 				B24439F02A00627500822683 /* Model */,
 				B24439EF2A00627000822683 /* Views */,
+				B2254D262A01439A0034C710 /* Stickers */,
 				B219D83C2A00475F0098DDB1 /* Assets.xcassets */,
 				B219D83E2A00475F0098DDB1 /* Preview Content */,
-				B2895CC12A042B62002669C3 /* AppLoadingView.swift */,
-				B2895CC32A042B6B002669C3 /* SplashScreen.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -169,6 +173,7 @@
 				B2895CBF2A040034002669C3 /* LayoutView.swift */,
 				B2895CC52A043508002669C3 /* Carousel.swift */,
 				B2895CC92A052A8E002669C3 /* ShareCardView.swift */,
+				B2895CCB2A0532E2002669C3 /* TextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 				B2443A082A008FA200822683 /* CardStore.swift */,
 				B20E70132A0186F6001526B3 /* CustomTransfer.swift */,
 				B2895CB72A028D5D002669C3 /* Shapes.swift */,
+				B2895CCD2A054E8A002669C3 /* AppFonts.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 				B2443A052A008E3800822683 /* CardElement.swift in Sources */,
 				B20E700D2A0148F9001526B3 /* StickerModal.swift in Sources */,
 				B24439E52A004B2100822683 /* CardThumbnail.swift in Sources */,
+				B2895CCC2A0532E2002669C3 /* TextView.swift in Sources */,
 				B24439F72A00688100822683 /* Operators.swift in Sources */,
 				B2895CCA2A052A8E002669C3 /* ShareCardView.swift in Sources */,
 				B24439FF2A00777800822683 /* CardToolbar.swift in Sources */,
@@ -326,6 +333,7 @@
 				B20E70182A01956E001526B3 /* ViewExtensions.swift in Sources */,
 				B2443A092A008FA200822683 /* CardStore.swift in Sources */,
 				B219D8392A00475E0098DDB1 /* CardsApp.swift in Sources */,
+				B2895CCE2A054E8A002669C3 /* AppFonts.swift in Sources */,
 				B20E70102A0170B5001526B3 /* PhotosModal.swift in Sources */,
 				B24439FD2A00751900822683 /* ColorExtensions.swift in Sources */,
 				B20E70142A0186F6001526B3 /* CustomTransfer.swift in Sources */,

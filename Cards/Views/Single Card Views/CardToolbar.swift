@@ -53,6 +53,13 @@ struct CardToolbar: ViewModifier {
             dismiss()
           }
         }
+        ToolbarItem(placement: .navigationBarLeading) {
+          let uiImage = UIImage.screenshot(
+            card: card,
+            size: Settings.cardSize)
+          let image = Image(uiImage: uiImage)
+          //ShareLink
+        }
         ToolbarItem(placement: .bottomBar) {
           BottomToolbar(
             modal: $currentModal,

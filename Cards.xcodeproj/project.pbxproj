@@ -45,6 +45,7 @@
 		B2895CC42A042B6B002669C3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CC32A042B6B002669C3 /* SplashScreen.swift */; };
 		B2895CC62A043508002669C3 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CC52A043508002669C3 /* Carousel.swift */; };
 		B2895CC82A0437FD002669C3 /* ListSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CC72A0437FD002669C3 /* ListSelection.swift */; };
+		B2895CCA2A052A8E002669C3 /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2895CC92A052A8E002669C3 /* ShareCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		B2895CC32A042B6B002669C3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		B2895CC52A043508002669C3 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		B2895CC72A0437FD002669C3 /* ListSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSelection.swift; sourceTree = "<group>"; };
+		B2895CC92A052A8E002669C3 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				B24439F22A00650400822683 /* ResizableView.swift */,
 				B2895CBF2A040034002669C3 /* LayoutView.swift */,
 				B2895CC52A043508002669C3 /* Carousel.swift */,
+				B2895CC92A052A8E002669C3 /* ShareCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				B20E700D2A0148F9001526B3 /* StickerModal.swift in Sources */,
 				B24439E52A004B2100822683 /* CardThumbnail.swift in Sources */,
 				B24439F72A00688100822683 /* Operators.swift in Sources */,
+				B2895CCA2A052A8E002669C3 /* ShareCardView.swift in Sources */,
 				B24439FF2A00777800822683 /* CardToolbar.swift in Sources */,
 				B2895CC42A042B6B002669C3 /* SplashScreen.swift in Sources */,
 				B219D83B2A00475E0098DDB1 /* ContentView.swift in Sources */,
